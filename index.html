@@ -14,7 +14,41 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container weather-app-wrapper">
+      <form>
+        <input type="text" placeholder="Enter a City" />
+        <input type="submit" />
+        <input type="submit" value="Current Location" />
+      </form>
+      <h1>London</h1>
+      <ul class="main-descriptors">
+        <li>Thursday 22:00</li>
+        <li>Slight Rain</li>
+      </ul>
+      <div class="row">
+        <div class="col-8 temperature">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
+            alt="Raining Skies"
+          />
+          <span class="weather-temperature">62°</span
+          ><span> C | <a href="#">F</a> </span>
+        </div>
+        <div class="col-4">
+          <ul class="weather-attributes">
+            <li>Humidity: 40%</li>
+            <li>Feels-Like: 60°</li>
+            <li>Wind Speed: 6mph</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/BriCodes18/Vanilla-Weather-App"
+        >Open-Source Code</a
+      >
+      by Briana M 👩🏽‍💻
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
