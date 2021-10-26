@@ -1,7 +1,16 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+}
+
 form {
   text-align: center;
 }
 h1 {
+  color: #7c73e6;
   margin-top: 20px;
   margin-bottom: 0px;
   text-align: center;
@@ -14,14 +23,33 @@ footer {
   text-align: center;
 }
 .weather-app-wrapper {
-  margin-top: 50px;
+  background: #ffe9e3;
+  margin-top: 70px;
   max-width: 60%;
   padding: 20px;
   border: 1px solid black;
   border-radius: 4px;
 }
 
+.submit-city,
+.current-location {
+  padding: 2px;
+  border: 0.5px thin grey;
+  border-radius: 5px;
+  background: #e69c91f6;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+.submit-city:hover,
+.current-location:hover {
+  color: #e69c91f6;
+  background: white;
+  cursor: pointer;
+}
+
 .main-descriptors {
+  color: #b2afcc;
   margin-top: 0;
   padding: 0;
   list-style: none;
