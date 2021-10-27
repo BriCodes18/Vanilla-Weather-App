@@ -8,6 +8,10 @@ form {
   padding: 0px;
   margin-top: 0px;
 }
+button {
+  display: block;
+  margin: 10px auto;
+}
 h1 {
   color: #753422;
   margin-top: 20px;
