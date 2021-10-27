@@ -1,16 +1,12 @@
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(242, 235, 243) 0%,
-    rgb(234, 241, 249) 90.1%
-  );
+  background: #ffebc9;
 }
 
 form {
   text-align: center;
 }
 h1 {
-  color: #7c73e6;
+  color: #753422;
   margin-top: 20px;
   margin-bottom: 0px;
   text-align: center;
@@ -23,7 +19,7 @@ footer {
   text-align: center;
 }
 .weather-app-wrapper {
-  background: #ffe9e3;
+  background: #e9d2a2;
   margin-top: 70px;
   max-width: 60%;
   padding: 20px;
@@ -36,20 +32,20 @@ footer {
   padding: 2px;
   border: 0.5px thin grey;
   border-radius: 5px;
-  background: #e69c91f6;
-  color: white;
+  background: #ffebc9;
+  color: #753422;
   transition: all 200ms ease-in-out;
 }
 
 .submit-city:hover,
 .current-location:hover {
-  color: #e69c91f6;
+  color: #b05b3b;
   background: white;
   cursor: pointer;
 }
 
 .main-descriptors {
-  color: #b2afcc;
+  color: #b05b3b;
   margin-top: 0;
   padding: 0;
   list-style: none;
@@ -57,9 +53,11 @@ footer {
 }
 
 .weather-temperature {
+  color: #753422;
   font-size: 48px;
 }
 
 .weather-attributes {
+  color: #b05b3b;
   list-style-type: none;
 }
