@@ -4,6 +4,8 @@ body {
 
 form {
   text-align: center;
+  padding: 0px;
+  margin-top: 0px;
 }
 h1 {
   color: #753422;
@@ -20,9 +22,9 @@ footer {
 }
 .weather-app-wrapper {
   background: #e9d2a2;
-  margin-top: 70px;
+  margin: 80px 221px;
   max-width: 60%;
-  padding: 20px;
+  padding: 60px 0;
   border: 1px solid black;
   border-radius: 4px;
 }
@@ -39,8 +41,8 @@ footer {
 
 .submit-city:hover,
 .current-location:hover {
-  color: #b05b3b;
-  background: white;
+  color: white;
+  background: #753422;
   cursor: pointer;
 }
 
