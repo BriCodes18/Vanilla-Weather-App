@@ -28,15 +28,17 @@
             type="text"
             placeholder="Enter a City"
             autocomplete="off"
-            id="city"
+            id="city-value"
           />
           <input type="submit" class="submit-city" />
         </form>
         <button class="current-location">Current Location</button>
-        <h1>London</h1>
+        <h1 id="city">London</h1>
         <ul class="main-descriptors">
           <li>Thursday 22:00</li>
-          <li>Slight Rain</li>
+          <li class="weather-description" id="weather-description">
+            Slight Rain
+          </li>
         </ul>
         <div class="row">
           <div class="col-8 temperature">
@@ -44,14 +46,14 @@
               src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
               alt="Raining Skies"
             />
-            <span class="weather-temperature">62°</span
+            <span class="weather-temperature" id="temperature">62°</span
             ><span> C | <a href="#">F</a> </span>
           </div>
           <div class="col-4">
             <ul class="weather-attributes">
-              <li>Humidity: 40%</li>
-              <li>Feels-Like: 60°</li>
-              <li>Wind Speed: 6 mph</li>
+              <li>Feels-Like: <span id="feels-like">60</span>°</li>
+              <li>Humidity: <span id="humidity">40</span>%</li>
+              <li>Wind Speed: <span id="wind-speed">6</span>mph</li>
             </ul>
           </div>
         </div>

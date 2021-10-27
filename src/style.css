@@ -51,6 +51,10 @@ footer {
   cursor: pointer;
 }
 
+.weather-description {
+  text-transform: capitalize;
+}
+
 .main-descriptors {
   color: #b05b3b;
   margin-top: 0;
