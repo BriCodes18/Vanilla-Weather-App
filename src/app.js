@@ -8,7 +8,7 @@ function updateWeather(response) {
   weatherDescription.innerHTML = response.data.weather[0].description;
 
   let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = Math.round(response.data.main.temp);
+  temperature.innerHTML = `${Math.round(response.data.main.temp)}°`;
 
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
