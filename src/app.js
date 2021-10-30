@@ -59,11 +59,7 @@ function updateWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function getWeather(event) {
-  event.preventDefault();
-
-  let city = document.querySelector("#city-value").value;
-
+function search(city) {
   let apiKey = "b190b9864cf7bf2f14432317f03ad0e6";
   let units = "imperial";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
@@ -71,5 +67,13 @@ function getWeather(event) {
   axios.get(apiUrl).then(updateWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-value");
+  search(cityInputElement.value);
+}
+
 let weatherForm = document.querySelector("#weather-form");
-weatherForm.addEventListener("submit", getWeather);
+weatherForm.addEventListener("submit", handleSubmit);
+
+search("London");
