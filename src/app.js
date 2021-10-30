@@ -1,5 +1,4 @@
 function updateWeather(response) {
-  console.log(response.data);
 
   let header = document.querySelector("#city");
   header.innerHTML = response.data.name;
@@ -20,10 +19,17 @@ function updateWeather(response) {
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
 }
 
-let city = "London";
+function getWeather(event) {
+  event.preventDefault();
 
-let apiKey = "b190b9864cf7bf2f14432317f03ad0e6";
-let units = "imperial";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let city = document.querySelector("#city-value").value;
 
-axios.get(apiUrl).then(updateWeather);
+  let apiKey = "b190b9864cf7bf2f14432317f03ad0e6";
+  let units = "imperial";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+  axios.get(apiUrl).then(updateWeather);
+}
+
+let weatherForm = document.querySelector("#weather-form");
+weatherForm.addEventListener("submit", getWeather);
