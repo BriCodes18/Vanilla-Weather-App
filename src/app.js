@@ -26,7 +26,6 @@ function formatDate(timestamp) {
 }
 
 function updateWeather(response) {
-
   let header = document.querySelector("#city");
   header.innerHTML = response.data.name;
 
@@ -49,6 +48,15 @@ function updateWeather(response) {
   dateElement.innerHTML = `Last updated: ${formatDate(
     response.data.dt * 1000
   )}`;
+
+  let iconElement = document.querySelector("#icon");
+  let icon = response.data.weather[0].icon;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${icon}@2x.png`
+  );
+
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function getWeather(event) {
