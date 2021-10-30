@@ -26,7 +26,6 @@ function formatDate(timestamp) {
 }
 
 function updateWeather(response) {
-  console.log(response.data);
 
   let header = document.querySelector("#city");
   header.innerHTML = response.data.name;
