@@ -18,16 +18,18 @@ h1 {
   margin-bottom: 0px;
   text-align: center;
 }
-img {
-  width: 100px;
-}
 
 footer {
   text-align: center;
 }
+
+.main-icon {
+  width: 100px;
+}
+
 .weather-app-wrapper {
   background: #e9d2a2;
-  margin: 80px 221px;
+  margin: 80px 221px 10px;
   max-width: 60%;
   padding: 80px 20px;
   border: 1px solid black;
@@ -77,4 +79,21 @@ footer {
   color: #b05a3b;
   text-decoration: none;
   cursor: default;
+}
+
+.weather-forecast {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 16px;
+}
+
+.forecast-temps {
+  font-size: 13px;
+}
+
+.forecast-min {
+  opacity: 0.5;
 }
