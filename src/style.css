@@ -29,9 +29,9 @@ footer {
 
 .weather-app-wrapper {
   background: #e9d2a2;
-  margin: 80px 221px 10px;
+  margin: 80px 221px 0px;
   max-width: 60%;
-  padding: 80px 20px;
+  padding: 80px 20px 20px;
   border: 1px solid black;
   border-radius: 4px;
 }
@@ -84,6 +84,7 @@ footer {
 .weather-forecast {
   margin-top: 15px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .forecast-date {
