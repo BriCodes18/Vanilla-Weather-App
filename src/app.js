@@ -147,28 +147,6 @@ function getPosition() {
   navigator.geolocation.getCurrentPosition(handlePosition);
 }
 
-function showCelsiusTemp(event) {
-  event.preventDefault();
-
-  let celsiusTemp = ((fahrenheitTemp - 32) * 5) / 9;
-
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = `${Math.round(celsiusTemp)}°`;
-}
-
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-
-  fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
-
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = `${Math.round(fahrenheitTemp)}°`;
-}
-
 let fahrenheitTemp = null;
 
 let currentLocation = document.querySelector("#current-location");
@@ -176,11 +154,5 @@ currentLocation.addEventListener("click", getPosition);
 
 let weatherForm = document.querySelector("#weather-form");
 weatherForm.addEventListener("submit", handleSubmit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemp);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 search("London");

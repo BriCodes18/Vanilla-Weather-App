@@ -75,10 +75,8 @@ footer {
   list-style-type: none;
 }
 
-.temperature .active {
-  color: #b05a3b;
-  text-decoration: none;
-  cursor: default;
+.imperial-temp {
+  font-size: 18px;
 }
 
 .weather-forecast {
